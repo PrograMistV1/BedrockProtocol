@@ -409,4 +409,8 @@ interface PacketHandlerInterface{
 	public function handleAgentAnimation(AgentAnimationPacket $packet) : bool;
 
 	public function handleRefreshEntitlements(RefreshEntitlementsPacket $packet) : bool;
+
+	public function handlePlayerToggleCrafterSlotRequest(PlayerToggleCrafterSlotRequestPacket $packet) : bool;
+
+	public function handleSetPlayerInventoryOptions(SetPlayerInventoryOptionsPacket $packet) : bool;
 }

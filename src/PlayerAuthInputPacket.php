@@ -32,7 +32,7 @@ use function count;
 class PlayerAuthInputPacket extends DataPacket implements ServerboundPacket{
 	public const NETWORK_ID = ProtocolInfo::PLAYER_AUTH_INPUT_PACKET;
 
-	private Vector3 $position;
+	public Vector3 $position;
 	private float $pitch;
 	private float $yaw;
 	private float $headYaw;
@@ -45,7 +45,7 @@ class PlayerAuthInputPacket extends DataPacket implements ServerboundPacket{
 	private ?Vector3 $vrGazeDirection = null;
 	private int $tick;
 	private Vector3 $delta;
-	public ?ItemInteractionData $itemInteractionData = null;
+	private ?ItemInteractionData $itemInteractionData = null;
 	private ?ItemStackRequest $itemStackRequest = null;
 	/** @var PlayerBlockAction[]|null */
 	private ?array $blockActions = null;

@@ -805,4 +805,12 @@ trait PacketHandlerDefaultImplTrait{
 	public function handleRefreshEntitlements(RefreshEntitlementsPacket $packet) : bool{
 		return false;
 	}
+
+	public function handlePlayerToggleCrafterSlotRequest(PlayerToggleCrafterSlotRequestPacket $packet) : bool{
+		return false;
+	}
+
+	public function handleSetPlayerInventoryOptions(SetPlayerInventoryOptionsPacket $packet) : bool{
+		return false;
+	}
 }
